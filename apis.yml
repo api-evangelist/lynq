@@ -1,7 +1,28 @@
 aid: lynq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lynq.png
 name: Lynq
-description: Lynq is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Lynq Networks develops infrastructure-free, long-range wireless connectivity
+  for enterprise and OEM devices, bridging the gap between short-range Bluetooth
+  and infrastructure-dependent cellular/5G. Its technology lets original
+  equipment manufacturers build large-area device networks without deploying
+  traditional network infrastructure, targeting construction, agriculture,
+  military, and public-safety use cases. Lynq is a Techstars-backed portfolio
+  company. As of this enrichment pass the company publishes no public API,
+  developer portal, SDKs, or machine-readable API documentation; this profile
+  captures its identity and a domain-security probe for the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/lynq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Wireless
+- Networking
+- Connectivity
+- IoT
+- Hardware
+- OEM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lynq-domain-security.yml
 - type: Website
   url: https://lynqnetworks.com/
+- type: Blog
+  url: https://lynqnetworks.com/news
+- type: PrivacyPolicy
+  url: https://lynqnetworks.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
